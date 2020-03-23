@@ -12,7 +12,7 @@
 
 
 
-namespace sf1{//~
+namespace sf1{//~ sf1 ~
 
 
 //=======================================================//
@@ -21,7 +21,7 @@ namespace sf1{//~
 // 在古代，我们需要借用 类继承，接口继承 来实现。
 // 而在本函数中，我们通过 参数2 的类型检测 来实现
 // 如果 参数类型T 不携带 increase()，将会在编译器 报错
-//
+// ---
 // 在运行时，参数2 并无实际用途，为其赋上默认值:nullptr, 使其透明
 template <typename T> 
 void foo1( T& t_, decltype(t_.increase())* = nullptr){
@@ -34,7 +34,7 @@ void foo1( T& t_, decltype(t_.increase())* = nullptr){
 
 
 
-}//~
+}//~ sf1 ~
 
 
 #endif
